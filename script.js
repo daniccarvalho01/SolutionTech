@@ -50,7 +50,7 @@ document.querySelector("[data-contact-form]").addEventListener("submit", (event)
   const data = new FormData(form);
   const subject = encodeURIComponent(`Contato pelo site - ${data.get("servico")}`);
   const body = encodeURIComponent(
-    `Olá, conhecemos a SOLUTION TECH pelo site.\n\nNome: ${data.get("nome")}\nE-mail: ${data.get("email")}\nServiço de interesse: ${data.get("servico")}\n\nDemanda que queremos melhorar:\n${data.get("mensagem")}\n\nGostaríamos de receber uma orientação inicial sobre próximos passos.`
+    `Olá, conhecemos a SOLUTION TECH pelo site.\n\nNome: ${data.get("nome")}\nE-mail: ${data.get("email")}\nServiço de interesse: ${data.get("servico")}\n\nDemanda que queremos melhorar:\n${data.get("mensagem")}\n\nGostaríamos de agendar um diagnóstico gratuito de 20 minutos e receber uma orientação inicial sobre próximos passos.`
   );
 
   formStatus.textContent = "Abrindo o aplicativo de e-mail com a mensagem preparada...";

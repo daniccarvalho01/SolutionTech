@@ -234,6 +234,13 @@ h3 {
   line-height: 1.7;
 }
 
+.hero-offer {
+  max-width: 620px;
+  margin: 18px 0 0;
+  color: var(--soft);
+  line-height: 1.65;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -458,6 +465,38 @@ h3 {
   line-height: 1.5;
 }
 
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.example-grid article {
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.example-grid span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  padding: 7px 10px;
+  border: 1px solid rgba(70, 217, 255, 0.28);
+  border-radius: 999px;
+  color: var(--cyan);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.example-grid p,
+.simulation-grid p,
+.automation-flow p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .method-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
@@ -493,6 +532,64 @@ h3 {
 .steps p {
   grid-column: 2;
   margin: -6px 0 0;
+}
+
+.simulation-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(28px, 6vw, 82px);
+  align-items: center;
+}
+
+.simulation-grid > div:first-child p {
+  margin-top: 18px;
+}
+
+.automation-flow {
+  display: grid;
+  gap: 12px;
+  counter-reset: flow;
+}
+
+.automation-flow article {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 8px 16px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(157, 255, 92, 0.07), rgba(255, 255, 255, 0.025));
+}
+
+.automation-flow article + article::before {
+  position: absolute;
+  top: -13px;
+  left: 45px;
+  width: 2px;
+  height: 12px;
+  content: "";
+  background: rgba(70, 217, 255, 0.5);
+}
+
+.automation-flow span {
+  display: grid;
+  grid-row: span 2;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 8px;
+  color: #041114;
+  font-weight: 800;
+  background: var(--lime);
+}
+
+.automation-flow strong {
+  display: block;
+}
+
+.automation-flow p {
+  margin: 0;
 }
 
 .proof-grid {
@@ -680,6 +777,7 @@ h3 {
   .hero-metrics,
   .intro-grid,
   .method-grid,
+  .simulation-grid,
   .proof-grid,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -690,6 +788,10 @@ h3 {
   }
 
   .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .example-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -721,7 +823,8 @@ h3 {
   }
 
   .hero-metrics,
-  .service-grid {
+  .service-grid,
+  .example-grid {
     grid-template-columns: 1fr;
   }
 
