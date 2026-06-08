@@ -71,7 +71,7 @@ No Netlify, configure:
 
 ## Contato
 
-- WhatsApp: [55 17 99121-8819](https://wa.me/5517991218819)
+- WhatsApp: [55 17 99232-1782](https://wa.me/5517992321782)
 - E-mail: [daniela.suppino@gmail.com](mailto:daniela.suppino@gmail.com)
 
 ## Status
