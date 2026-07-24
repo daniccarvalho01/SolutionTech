@@ -32,6 +32,7 @@ O objetivo é entender o processo atual do cliente, identificar pontos de retrab
 ```text
 .
 ├── index.html
+├── blog.html
 ├── styles.css
 ├── script.js
 ├── assets/
