@@ -33,6 +33,8 @@ O objetivo é entender o processo atual do cliente, identificar pontos de retrab
 .
 ├── index.html
 ├── blog.html
+├── blog-automacao-planilhas.html
+├── blog-ia-para-pequenas-empresas.html
 ├── styles.css
 ├── script.js
 ├── assets/
