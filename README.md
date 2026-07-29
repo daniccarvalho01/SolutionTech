@@ -34,6 +34,7 @@ O objetivo é entender o processo atual do cliente, identificar pontos de retrab
 ├── index.html
 ├── blog.html
 ├── blog-automacao-planilhas.html
+├── blog-diferenca-entre-site-e-ecommerce.html
 ├── blog-ia-para-pequenas-empresas.html
 ├── styles.css
 ├── script.js
@@ -41,6 +42,8 @@ O objetivo é entender o processo atual do cliente, identificar pontos de retrab
 │   ├── solution-tech-logo.png
 │   └── tech-hero.png
 └── outputs/
+    ├── instagram-site-vs-ecommerce-caption.txt
+    ├── instagram-site-vs-ecommerce.png
     └── planilha-leads-solution-tech.xlsx
 ```
 

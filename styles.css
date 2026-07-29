@@ -767,7 +767,7 @@ h3 {
 
 .blog-card-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -783,6 +783,7 @@ h3 {
 }
 
 .blog-card.featured {
+  grid-column: span 2;
   background: linear-gradient(135deg, rgba(70, 217, 255, 0.12), rgba(157, 255, 92, 0.06));
 }
 
@@ -1083,6 +1084,10 @@ h3 {
 
   .blog-card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .blog-card.featured {
+    grid-column: span 1;
   }
 }
 
