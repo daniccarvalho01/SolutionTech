@@ -30,7 +30,7 @@
       <a href="#servicos">Soluções</a>
       <a href="#exemplos">Exemplos</a>
       <a href="#metodo">Método</a>
-      <a href="#prova">Confiança</a>
+      <a href="#recomendacoes">Recomendações</a>
       <a href="blog.html">Blog</a>
       <a class="nav-cta" href="#contato">Diagnóstico</a>
     </nav>
@@ -287,6 +287,94 @@
           <div><strong>Entrega prática</strong><span>Interfaces e automações pensadas para uso diário, não para apresentação bonita apenas.</span></div>
           <div><strong>Base para crescer</strong><span>Soluções organizadas para receber novas etapas sem recomeçar tudo.</span></div>
         </div>
+      </div>
+    </section>
+
+    <section class="recommendations section-band" id="recomendacoes">
+      <div class="section-inner recommendations-grid">
+        <div class="recommendations-content">
+          <p class="eyebrow">Recomendações</p>
+          <h2>Sua experiência pode ajudar outras empresas a escolher com mais confiança.</h2>
+          <p>
+            Se a Solution Tech já participou de um projeto com você, conte como foi a experiência. Cada recomendação é revisada antes de aparecer no site.
+          </p>
+
+          <div class="recommendation-note">
+            <strong>Como funciona?</strong>
+            <span>Você envia o recado, nós conferimos o conteúdo e só publicamos depois da sua autorização.</span>
+          </div>
+
+          <div class="recommendation-placeholder">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <p>As primeiras recomendações aprovadas serão exibidas aqui.</p>
+            <strong>Seu relato pode ser o próximo.</strong>
+          </div>
+        </div>
+
+        <form
+          class="contact-form recommendation-form"
+          name="recomendacao"
+          method="POST"
+          action="/obrigado-recomendacao.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="recomendacao">
+          <p class="form-honeypot" aria-hidden="true">
+            <label>Não preencha este campo: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <div class="form-heading">
+            <strong>Deixe sua recomendação</strong>
+            <span>Leva menos de dois minutos.</span>
+          </div>
+
+          <label>
+            Seu nome
+            <input type="text" name="nome" autocomplete="name" maxlength="80" required>
+          </label>
+          <label>
+            Empresa ou segmento <span class="field-optional">(opcional)</span>
+            <input type="text" name="empresa" autocomplete="organization" maxlength="100">
+          </label>
+          <label>
+            Serviço realizado
+            <select name="servico" required>
+              <option value="">Selecione</option>
+              <option>Sistemas sob medida</option>
+              <option>Sites e e-commerces</option>
+              <option>Automação de processos</option>
+              <option>Dashboards e dados</option>
+              <option>Integrações</option>
+              <option>Suporte técnico</option>
+              <option>Outro serviço</option>
+            </select>
+          </label>
+
+          <fieldset class="rating-fieldset">
+            <legend>Como você avalia sua experiência?</legend>
+            <div class="rating-options">
+              <label><input type="radio" name="nota" value="5" required><span>5 — Excelente</span></label>
+              <label><input type="radio" name="nota" value="4"><span>4 — Muito boa</span></label>
+              <label><input type="radio" name="nota" value="3"><span>3 — Boa</span></label>
+              <label><input type="radio" name="nota" value="2"><span>2 — Regular</span></label>
+              <label><input type="radio" name="nota" value="1"><span>1 — Ruim</span></label>
+            </div>
+          </fieldset>
+
+          <label>
+            Seu recado
+            <textarea name="recomendacao" rows="6" maxlength="1000" placeholder="Conte o que foi feito e como a solução ajudou você ou sua empresa." required></textarea>
+          </label>
+
+          <label class="consent-field">
+            <input type="checkbox" name="autorizacao-publicacao" value="sim" required>
+            <span>Autorizo a Solution Tech a publicar esta recomendação, meu nome e, se informado, o nome da empresa neste site e em seus canais de comunicação.</span>
+          </label>
+
+          <button class="button button-primary" type="submit">Enviar recomendação</button>
+          <p class="form-privacy">O envio não garante publicação. Você pode solicitar a remoção do depoimento a qualquer momento pelos canais de contato do site.</p>
+        </form>
       </div>
     </section>
 

@@ -37,6 +37,7 @@ O objetivo é entender o processo atual do cliente, identificar pontos de retrab
 ├── blog-diferenca-entre-site-e-ecommerce.html
 ├── blog-ia-para-pequenas-empresas.html
 ├── blog-whatsapp-api-cobranca-outubro-2026.html
+├── obrigado-recomendacao.html
 ├── styles.css
 ├── script.js
 ├── assets/
@@ -55,6 +56,7 @@ O objetivo é entender o processo atual do cliente, identificar pontos de retrab
 - JavaScript
 - Layout responsivo
 - Deploy estático via Netlify
+- Coleta moderada de recomendações via Netlify Forms
 
 ## Como visualizar localmente
 
