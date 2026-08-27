@@ -686,6 +686,74 @@ h3 {
   line-height: 1;
 }
 
+.testimonial-card {
+  position: relative;
+  margin-top: 18px;
+  padding: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(157, 255, 92, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(157, 255, 92, 0.08), rgba(70, 217, 255, 0.04)),
+    rgba(255, 255, 255, 0.025);
+}
+
+.testimonial-card::after {
+  position: absolute;
+  top: -26px;
+  right: 16px;
+  color: rgba(157, 255, 92, 0.13);
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 1;
+  content: "“";
+}
+
+.testimonial-rating {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+  color: var(--lime);
+  font-size: 1.05rem;
+  letter-spacing: 0.16em;
+}
+
+.testimonial-card blockquote {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--soft);
+  font-size: 1.05rem;
+  font-style: normal;
+  line-height: 1.75;
+}
+
+.testimonial-card footer {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 3px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.testimonial-card footer strong {
+  color: var(--text);
+}
+
+.testimonial-card footer span,
+.testimonial-card footer small {
+  color: var(--muted);
+}
+
+.testimonial-card footer small {
+  margin-top: 4px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .form-heading {
   display: grid;
   gap: 4px;
